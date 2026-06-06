@@ -263,11 +263,11 @@ if __name__ == '__main__':
         print('CUDA in use...')
         device = torch.device('cuda')
 
-    # train_init(device)
-    # predict_gender()
+    train_init(device)
+    predict_gender()
 
-    df: pd.DataFrame = pd.read_csv(os.path.join('Utils', 'predictions.tsv'), sep='\t', names=['Name', 'Label'])
-    print(df['Label'].value_counts())
+    # df: pd.DataFrame = pd.read_csv(os.path.join('Utils', 'predictions.tsv'), sep='\t', names=['Name', 'Label'])
+    # print(df['Label'].value_counts())
 
-    df: pd.DataFrame = pd.read_csv(os.path.join('Utils', 'targets.tsv'), sep='\t', names=['Name', 'Label'])
-    print(df['Label'].value_counts())
+    # df: pd.DataFrame = pd.read_csv(os.path.join('Utils', 'targets.tsv'), sep='\t', names=['Name', 'Label'])
+    # print(df['Label'].value_counts())
